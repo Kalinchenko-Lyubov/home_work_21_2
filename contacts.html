@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <title>Контакты</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
     <style>
         body {
             background-color: #f8f9fa;
@@ -22,9 +17,7 @@
         }
     </style>
 </head>
-
 <body>
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-3 col-md-2 bg-dark text-white sidebar d-flex flex-column p-3">
@@ -46,7 +39,7 @@
                     </a>
                 </li>
                 <li>
-                     <a href="/contacts" class="nav-link active text-white">
+                     <a href="/contacts" class="nav-link active">
                     <i class="bi bi-telephone me-2"></i> Контакты
                 </a>
                 </li>
@@ -63,24 +56,16 @@
                 </ul>
             </div>
         </div>
-
-        <!-- Content -->
         <div class="col-9 col-md-10 p-5">
-
             <h1 class="text-center mb-5">Контакты</h1>
-
             <div class="row justify-content-center g-5">
-
-                <!-- Форма -->
                 <div class="col-md-5">
                     <div class="card p-4 shadow-sm">
-
                         <form method="POST" action="/contacts">
                             <div class="mb-3">
                                 <label class="form-label">Имя</label>
                                 <input type="text" class="form-control" name="name">
                             </div>
-
                             <div class="mb-3">
                                 <label class="form-label">Почта</label>
                                 <div class="input-group">
@@ -88,23 +73,16 @@
                                     <input type="email" class="form-control" name="email">
                                 </div>
                             </div>
-
                             <div class="mb-3">
                                 <label class="form-label">Сообщение</label>
                                 <textarea class="form-control" rows="4" name="message"></textarea>
                             </div>
-
                             <button class="btn btn-primary">Отправить</button>
                         </form>
-
                     </div>
                 </div>
-
-                <!-- Текст -->
                 <div class="col-md-5">
-
                     <h4>Наши контакты</h4>
-
                     <p class="text-muted">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -114,22 +92,15 @@
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.
                     </p>
-
                     <p class="text-muted">
                         While these feedback styles cannot be styled with CSS, you can still
                         customize the feedback text through JavaScript.
                     </p>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
