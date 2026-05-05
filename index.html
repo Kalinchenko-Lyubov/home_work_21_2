@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3 col-md-2 bg-dark text-white sidebar d-flex flex-column p-3">
+            <h5 class="mb-4">☰ Меню</h5>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active text-white">
+                        <i class="bi bi-house me-2"></i> Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="/category" class="nav-link text-white">
+                        <i class="bi bi-folder me-2"></i> Категории
+                    </a>
+                </li>
+                <li>
+                    <a href="/catalog" class="nav-link text-white">
+                        <i class="bi bi-cart me-2"></i> Заказы
+                    </a>
+                </li>
+                <li>
+                     <a href="/contacts" class="nav-link text-white">
+                    <i class="bi bi-telephone me-2"></i> Контакты
+                </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+                    <img src="user.jpg" class="rounded-circle me-2" width="32" height="32">
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="col-9 col-md-10 p-4 text-center">
+
+            <h1>Главная</h1>
+            <p class="text-muted">
+                Вы находитесь на сайте, предназначенном для продажи товаров.
+            </p>
+
+            <div class="row mt-4 justify-content-center">
+
+                <!-- Card 1 -->
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">Товар 1</div>
+                        <div class="card-body">
+                            <h2>$100</h2>
+                            <p class="text-muted">
+                                10 users included, 2 GB of storage,<br>
+                                Email support, Help center access
+                            </p>
+                            <button class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">Товар 1</div>
+                        <div class="card-body">
+                            <h2>$100</h2>
+                            <p class="text-muted">
+                                10 users included, 2 GB of storage,<br>
+                                Email support, Help center access
+                            </p>
+                            <button class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">Товар 1</div>
+                        <div class="card-body">
+                            <h2>$100</h2>
+                            <p class="text-muted">
+                                10 users included, 2 GB of storage,<br>
+                                Email support, Help center access
+                            </p>
+                            <button class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
